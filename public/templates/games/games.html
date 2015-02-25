@@ -1,0 +1,25 @@
+<section ng-init="app.loadGames()">
+    <table class="table table-hover">
+        <thead>
+            <th>Username</th>
+            <th>Playcount</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="player in app.players | orderBy:'playCount':true">
+                <td>
+                    {{ player.username }}
+                </td>
+                <td>
+                    {{ player.playCount }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<form ng-submit="app.loadGames(app.mp); app.resetPlayers()" class="form-inline">
+    <div class="form-group">
+        <label for="mpSelect">Your MP ID</label>
+        <input type="text" id="mpSelect" class="form-control" ng-model="app.mp">
+    </div>
+    <input type="submit" value="Submit" class="btn btn-default">
+</form>

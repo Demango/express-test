@@ -48,14 +48,14 @@ app.controller('AppController', function($http, $routeParams, $scope) {
         });
     };
 
-    this.checkGames = function() {
-        for (var i = 0; i >= 0; i++) {
-            $http.get('/gamelist/' + i).then(function(res) {
-                self.gamesData = res.data;
-                console.log(self.gamesData.match);
-            });
-        };
-    };
+    //this.checkGames = function() {
+    //    for (var i = 0; i >= 0; i++) {
+    //        $http.get('/gamelist/' + i).then(function(res) {
+    //            self.gamesData = res.data;
+    //            console.log(self.gamesData.match);
+    //        });
+    //    };
+    //};
 
     this.loadUsernames = function(id) {
         this.players.forEach(function(player) {

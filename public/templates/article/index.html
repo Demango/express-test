@@ -1,0 +1,7 @@
+<h1>A generic blog</h1>
+<section ng-init="app.loadArticles()">
+    <div ng-repeat="article in app.articles">
+        <a href="/#/article/{{ article.id }}"><span ng-bind="article.title"></span></a>
+        <p><span ng-bind="article.published"></span></p>
+    </div>
+</section>

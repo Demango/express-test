@@ -14,6 +14,6 @@ Installation instructions:
     
   }
 
-4. Open your cmd and navigate to the directory of the repository and enter "node index.js"
+4. Open your cmd and navigate to the directory of the repository and enter ``node index.js``
 5. Open "http://localhost:3000/#/games/" in your browser and enter your multiplayer id and press submit.
 e.g https://osu.ppy.sh/mp/xxxxxxxx where xxxxxxxx is your multiplayer id
